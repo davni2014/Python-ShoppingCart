@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Assets/cart.js"></script>
+    <link rel="stylesheet" href="Assets/cart.css">
+    <!------ Include the above in your HEAD tag ---------->
+
+
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+<h1><strong>Welcome to the Pickle Cart</strong></h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+    <!--PRODUCTS-->
+
+
+  <!--pickle-->
+  <div class="product">
+    <div class="product-image">
+      <img src="Assets/images/pickle.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Hunter Pickle</div>
+      <p class="product-description"> Student's choice</p>
+    </div>
+    <div class="product-price">1.99</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+    <div class="product-line-price">0.00</div>
+  </div>
+  <!--end of pickle-->
+
+
+  <!--pickle2-->
+  <div class="product">
+    <div class="product-image">
+      <img src="Assets/images/pickle2.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Vlasic Pickles</div>
+      <p class="product-description"> Kosher Dill</p>
+    </div>
+    <div class="product-price">4.95</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+    <div class="product-line-price">0.00</div>
+  </div>
+  <!--end of pickle2-->
+
+  <!--pickle3-->
+  <div class="product">
+    <div class="product-image">
+      <img src="Assets/images/pickle3.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Claussen Pickles</div>
+      <p class="product-description"> Sweet Bread 'N Butter</p>
+    </div>
+    <div class="product-price">3.69</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+    <div class="product-line-price">0.00</div>
+  </div>
+  <!--end of pickle3-->
+
+
+  <!--pickle4-->
+  <div class="product">
+    <div class="product-image">
+      <img src="Assets/images/pickle4.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Cracovia Pickles</div>
+      <p class="product-description"> Polish Dill Pickles</p>
+    </div>
+    <div class="product-price">2.85</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+    <div class="product-line-price">0.00</div>
+  </div>
+  <!--end of pickle4-->
+
+
+  <!--pickle5-->
+  <div class="product">
+    <div class="product-image">
+      <img src="Assets/images/pickle5.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Baby Pickles</div>
+      <p class="product-description"> Pickles (680g)</p>
+    </div>
+    <div class="product-price">3.25</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+    <div class="product-line-price">0.00</div>
+  </div>
+  <!--end of pickle5-->
+
+    <!--end of PRODUCTS-->
+
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">0.00</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (6%)</label>
+      <div class="totals-value" id="cart-tax">0.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">0.00</div>
+    </div>
+  </div>
+</div>
+<button class="checkout" onclick="checkout_btn()" >Checkout</button>
+</body>
+</html>
